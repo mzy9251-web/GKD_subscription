@@ -17,7 +17,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 1,
-          name: '①读秒结束后[上滑]',
+          name: '①读秒结束后[上滑]-旧文本：上滑继续观看短剧',
           swipeArg: {
             start: {
               x: 'screenWidth/2',
@@ -32,6 +32,23 @@ export default defineGkdApp({
           matches: '[text="上滑继续观看短剧"][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/32430183', //A
           excludeSnapshotUrls: 'https://i.gkd.li/i/32430193', //A 倒计时未结束
+          exampleUrls: 'https://e.gkd.li/248c4c7b-469c-459b-a489-23c123f35766',
+        },
+        {
+          key: 11,
+          name: '①读秒结束后[上滑]-新文本：上滑继续观看剧集',
+          swipeArg: {
+            start: {
+              x: 'screenWidth/2',
+              y: 'screenHeight * 0.7',
+            },
+            end: {
+              x: 'screenWidth/2',
+              y: 'screenHeight * 0.3',
+            },
+            duration: 200,
+          },
+          matches: '[text="上滑继续观看剧集"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/248c4c7b-469c-459b-a489-23c123f35766',
         },
         {
